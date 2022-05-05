@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/958b0131c3.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="creator">
+            <h1>TODO LIST</h1>
+            <div class="taskadder">
+                <input type="text" id="taskctx" placeholder="Wpisz treść zadania...">
+                <button id="add">ADD</button>
+            </div>
+        </div>
+        <div class="tasks">
+            <h3>LISTA ZADAŃ:</h3>
+            <p id="contextrequest" class="invisible">Wpisz treść zadania!</p>
+            <p id="notasks">Brak zadań na liście</p>
+        </div>
+    </div>
+
+    <div class="modal">
+        <h2>Edytuj zadanie:</h2>
+        <p class="modalalert">Musisz podać jakąś treść!</p>
+        <input type="text" id="newctx" placeholder="Wprowadź nową treść zadania...">
+        <div class="modalbtns">
+            <button id="confirm">ZATWIERDŹ</button>
+            <button id="cancel">ANULUJ</button>
+        </div>
+    </div>
+
+</body>
+</html>
